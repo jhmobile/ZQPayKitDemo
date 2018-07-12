@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4B3ED53B1819FD4C7BE0F955 /* Pods_ZQPayKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D4949FC1E1EF03BA337A00 /* Pods_ZQPayKitDemo.framework */; };
+		F21EE1DC20F6222C00255F44 /* ZQPayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21EE1DB20F6222C00255F44 /* ZQPayKit.framework */; };
+		F21EE20E20F659F900255F44 /* ZQPayKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F21EE20D20F659F900255F44 /* ZQPayKitResource.bundle */; };
+		F21EE21020F6F6D900255F44 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21EE20F20F6F6D900255F44 /* Security.framework */; };
+		F21EE21220F6F6E000255F44 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F21EE21120F6F6E000255F44 /* libstdc++.6.0.9.tbd */; };
+		F21EE21420F6F6E800255F44 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21EE21320F6F6E800255F44 /* AudioToolbox.framework */; };
 		F25AAAB120EB997100754C9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F25AAAB020EB997100754C9B /* AppDelegate.m */; };
 		F25AAAB420EB997100754C9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F25AAAB320EB997100754C9B /* ViewController.m */; };
 		F25AAAB720EB997100754C9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25AAAB520EB997100754C9B /* Main.storyboard */; };
@@ -20,6 +25,11 @@
 		0B44152EA5C891F7F396D6FA /* Pods-ZQPayKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQPayKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZQPayKitDemo/Pods-ZQPayKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		22D4949FC1E1EF03BA337A00 /* Pods_ZQPayKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQPayKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7258AD068289806ECAE6ACFC /* Pods-ZQPayKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQPayKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZQPayKitDemo/Pods-ZQPayKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F21EE1DB20F6222C00255F44 /* ZQPayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZQPayKit.framework; sourceTree = "<group>"; };
+		F21EE20D20F659F900255F44 /* ZQPayKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZQPayKitResource.bundle; sourceTree = "<group>"; };
+		F21EE20F20F6F6D900255F44 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F21EE21120F6F6E000255F44 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		F21EE21320F6F6E800255F44 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F25AAAAC20EB997100754C9B /* ZQPayKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZQPayKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25AAAAF20EB997100754C9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F25AAAB020EB997100754C9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,7 +47,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21EE21420F6F6E800255F44 /* AudioToolbox.framework in Frameworks */,
+				F21EE21220F6F6E000255F44 /* libstdc++.6.0.9.tbd in Frameworks */,
+				F21EE21020F6F6D900255F44 /* Security.framework in Frameworks */,
 				4B3ED53B1819FD4C7BE0F955 /* Pods_ZQPayKitDemo.framework in Frameworks */,
+				F21EE1DC20F6222C00255F44 /* ZQPayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,8 @@
 		F25AAAAE20EB997100754C9B /* ZQPayKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F21EE20D20F659F900255F44 /* ZQPayKitResource.bundle */,
+				F21EE1DB20F6222C00255F44 /* ZQPayKit.framework */,
 				F25AAAAF20EB997100754C9B /* AppDelegate.h */,
 				F25AAAB020EB997100754C9B /* AppDelegate.m */,
 				F25AAAB220EB997100754C9B /* ViewController.h */,
@@ -90,6 +106,9 @@
 		F938CD2F750969CB40107316 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F21EE21320F6F6E800255F44 /* AudioToolbox.framework */,
+				F21EE21120F6F6E000255F44 /* libstdc++.6.0.9.tbd */,
+				F21EE20F20F6F6D900255F44 /* Security.framework */,
 				22D4949FC1E1EF03BA337A00 /* Pods_ZQPayKitDemo.framework */,
 			);
 			name = Frameworks;
@@ -154,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21EE20E20F659F900255F44 /* ZQPayKitResource.bundle in Resources */,
 				F25AAABC20EB997100754C9B /* LaunchScreen.storyboard in Resources */,
 				F25AAAB920EB997100754C9B /* Assets.xcassets in Resources */,
 				F25AAAB720EB997100754C9B /* Main.storyboard in Resources */,
@@ -197,6 +217,7 @@
 				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
+				"${BUILT_PRODUCTS_DIR}/ZXingObjC/ZXingObjC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -209,6 +230,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZXingObjC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -366,11 +388,43 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ZQPayKitDemo",
+				);
 				INFOPLIST_FILE = ZQPayKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"YTKNetwork\"",
+					"-framework",
+					"\"YYModel\"",
+					"-framework",
+					"\"YYText\"",
+					"-ObjC",
+				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinhui365.ZQPayKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,11 +437,43 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ZQPayKitDemo",
+				);
 				INFOPLIST_FILE = ZQPayKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"YTKNetwork\"",
+					"-framework",
+					"\"YYModel\"",
+					"-framework",
+					"\"YYText\"",
+					"-ObjC",
+				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinhui365.ZQPayKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

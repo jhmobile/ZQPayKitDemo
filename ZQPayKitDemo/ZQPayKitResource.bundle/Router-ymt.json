@@ -1,0 +1,194 @@
+{
+    "taskClass": "ViewControllerTask",
+    "subRoutes": {
+        "/": {
+            "redirect": "/life"
+        },
+        "/webview": {
+            "taskOptions": {
+                "controllerClass": "BaseWebViewController"
+            }
+        },
+        "/login": {
+            "taskOptions": {
+                "controllerClass": "LoginViewController",
+                "present": "1",
+                "wrap": "NavigationController"
+            }
+        },
+        "/register": {
+            "taskOptions": {
+                "controllerClass": "RegisterViewController"
+            }
+        },
+        "/reset-login-pwd": {
+            "taskOptions": {
+                "controllerClass": "ResetLoginKeyViewController"
+            }
+        },
+        "/user": {
+            "interceptors": "LoginInterceptor",
+            "/setting": {
+                "taskOptions": {
+                    "controllerClass": "AccountSettingViewController"
+                }
+            },
+            "/bank-list": {
+                "interceptors": "BindCardInterceptor",
+                "taskOptions": {
+                    "controllerClass": "BankSelector"
+                }
+            },
+            "/add-bank": {
+                "interceptors": "BindCardInterceptor",
+                "taskOptions": {
+                    "controllerClass": "AddBankViewController",
+                    "present": 1,
+                    "wrap": "NavigationController"
+              }
+            },
+            "/invite-friend": {
+                "taskOptions": {
+                    "controllerClass": "InviteFriendViewController"
+                }
+            },
+            "/tradekey-manger": {
+                "interceptors": ["BindCardInterceptor"],
+                "taskOptions": {
+                    "controllerClass": "TradeKeyManagerViewController"
+                }
+            },
+
+            "/reset-trade-pwd": {
+                "interceptors": ["BindCardInterceptor"],
+                "taskOptions": {
+                    "controllerClass": "AuthenticationViewController"
+                }
+            },
+            "/binding-card": {
+                "taskOptions": {
+                    "controllerClass": "BindCardViewController"
+                }
+            },
+            "/identify-guide": {
+                "interceptors": ["BindCardInterceptor"],
+                "taskOptions": {
+                    "controllerClass": "USVerifyIDViewController"
+                }
+            },
+            "/manage-organ": {
+                "redirect": "/react-native?RNKey=ManageOrgan"
+            }
+        },
+        "/life": {
+            "taskClass" : "TabBarControllerTask",
+            "taskOptions":{
+                "controllerClass": "LifeViewController"
+            }
+        },
+        "/work": {
+            "taskClass" : "TabBarControllerTask",
+            "taskOptions":{
+                "controllerClass": "WorkViewController"
+            }
+        },
+        "/time-line": {
+            "taskClass" : "TabBarControllerTask",
+            "taskOptions":{
+                "controllerClass": "TimeLineViewController"
+            }
+        },
+        "/react-native": {
+            "taskClass": "ReactNativeControllerTask",
+            "taskOptions": {
+                "controllerClass": "ReactViewController"
+            }
+        },
+        "/assets": {
+            "interceptors": "LoginInterceptor",
+            "taskClass": "TabBarControllerTask",
+            "taskOptions": {
+                "taskClass": "ReactNativeControllerTask",
+                "controllerClass": "MyHomeViewController"
+            },
+            "/order-record-list": {
+                "taskClass": "ViewControllerTask",
+                "taskOptions": {
+                    "controllerClass": "YMTTransactionRecordViewController"
+                }
+            },
+            "/balance-record-list": {
+                "redirect": "/assets/order-record-list?index=2"
+            },
+            "/balance-detail": {
+                "taskClass": "ViewControllerTask",
+                "taskOptions": {
+                    "controllerClass": "YMTBalanceViewController"
+                }
+            }
+        },
+        "/deal": {
+            "interceptors": ["LoginInterceptor","BindCardInterceptor"],
+            "/transfer-home": {
+                "redirect": "/react-native?RNKey=TransferHome"
+            },
+            "/recharge": {
+                "/offline": {
+                    "taskOptions": {
+                        "controllerClass": "LargeRechargeViewController"
+                    }
+                },
+                "taskOptions": {
+                    "controllerClass": "BalanceRechargeViewController"
+                }
+            },
+            "/withdraw": {
+                "taskOptions": {
+                    "controllerClass": "WithdrawViewController"
+                }
+            },
+            "/remit-commit": {
+                "taskOptions": {
+                    "controllerClass": "AccountTransferViewController"
+                }
+            },
+            "/cashier": {
+                "taskOptions": {
+                    "controllerClass": "ZQPayCashierViewController",
+                    "present": 1,
+                    "wrap": "TransitionNavigationController"
+                }
+            }
+        },
+        "/payment": {
+            "interceptors": ["LoginInterceptor","BindCardInterceptor"],
+            "/shop-info": {
+                "interceptors": ["SignUnionPayInterceptor"],
+                "taskOptions": {
+                    "controllerClass": "PYMerchantViewController"
+                }
+            },
+            "/qr-code": {
+                "interceptors": ["SignUnionPayInterceptor"],
+                "taskOptions": {
+                    "controllerClass": "PYBeScanPaymentViewController"
+                }
+            },
+            "/signUnion": {
+                "taskOptions": {
+                    "controllerClass": "PYBeScanSelectBankViewController"
+                }
+            },
+            "/scan": {
+                "taskOptions": {
+                    "controllerClass" : "PYScanQRViewController"
+                }
+            }
+        },
+        "/404": {
+            "taskOptions": {
+                "controllerClass": "PageNotFoundViewController"
+            }
+        }
+    }
+}

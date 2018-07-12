@@ -25,6 +25,9 @@ PODS:
     - AFNetworking (~> 3.0)
   - YYModel (1.0.4)
   - YYText (1.0.7)
+  - ZXingObjC (3.2.2):
+    - ZXingObjC/All (= 3.2.2)
+  - ZXingObjC/All (3.2.2)
 
 DEPENDENCIES:
   - IQKeyboardManager (= 5.0.7)
@@ -35,6 +38,7 @@ DEPENDENCIES:
   - YTKNetwork (= 2.0.3)
   - YYModel (= 1.0.4)
   - YYText (= 1.0.7)
+  - ZXingObjC (= 3.2.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -47,6 +51,7 @@ SPEC REPOS:
     - YTKNetwork
     - YYModel
     - YYText
+    - ZXingObjC
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -58,7 +63,8 @@ SPEC CHECKSUMS:
   YTKNetwork: c4b0c29c9d639dc050d475de69ee626d53eac598
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  ZXingObjC: 2c95a0dc52daac69b23ec78fad8fa2fec05f8981
 
-PODFILE CHECKSUM: cd0e1c9e5a0206e3f25ea48511ed863bec3409fc
+PODFILE CHECKSUM: edee22c9d2d2c24df856abeb2329b81501fb73aa
 
 COCOAPODS: 1.5.3

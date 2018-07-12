@@ -1,0 +1,6 @@
+framework module ZQPayKit {
+  umbrella header "ZQPayKit.h"
+
+  export *
+  module * { export * }
+}

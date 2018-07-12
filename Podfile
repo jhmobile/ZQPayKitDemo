@@ -15,5 +15,5 @@ target 'ZQPayKitDemo' do
     pod 'YYText', '1.0.7'
     pod 'MJRefresh', '3.1.15.1’
     pod 'IQKeyboardManager', '5.0.7’
-     
+    pod 'ZXingObjC', '3.2.2'
 end
