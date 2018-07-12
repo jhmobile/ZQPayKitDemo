@@ -14,9 +14,35 @@
 @property (weak, nonatomic) IBOutlet UILabel *uidLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tokenLabel;
 
+@property (nonatomic, copy) NSString *uid;
+@property (nonatomic, copy) NSString *token;
+
 @end
 
 @implementation ViewController
+
+- (void)errorWithCode:(NSInteger)code {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:[NSString stringWithFormat:@"%ld", (long)code] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:ok];
+    [self presentViewController:alert animated:NO completion:nil];
+}
+
+- (IBAction)pwdManage:(id)sender {
+    [ZQPayKit openPaymentPasswordManagerViewControllerWithCallback:^(NSError *error) {
+        if (error) {
+            [self errorWithCode:error.code];
+        }
+    }];
+}
+
+- (IBAction)bankList:(id)sender {
+    [ZQPayKit openBankListViewControllerWithCallback:^(NSError *error) {
+        if (error) {
+            [self errorWithCode:error.code];
+        }
+    }];
+}
 
 - (IBAction)login:(id)sender {
     [ZQPayKit performSelector:NSSelectorFromString(@"test")];
@@ -27,6 +53,15 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [ZQPayKit initWithAppKey:@"jh28a4c4bc6734f58b" appSecret:@"63a10e15c19741599aacc686ecf7ffd5"];
+    [ZQPayKit setUid:@"1315" token:@"dlvjljajaf3"];
+    
+    self.uid = @"";
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

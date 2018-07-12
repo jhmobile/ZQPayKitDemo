@@ -422,7 +422,7 @@
 					"\"YYModel\"",
 					"-framework",
 					"\"YYText\"",
-					"-ObjC",
+					"-all_load",
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinhui365.ZQPayKitDemo;
@@ -471,7 +471,7 @@
 					"\"YYModel\"",
 					"-framework",
 					"\"YYText\"",
-					"-ObjC",
+					"-all_load",
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinhui365.ZQPayKitDemo;
