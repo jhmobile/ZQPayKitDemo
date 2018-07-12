@@ -27,6 +27,13 @@
     [alert addAction:ok];
     [self presentViewController:alert animated:NO completion:nil];
 }
+- (IBAction)pay:(id)sender {
+    [ZQPayKit openCashierViewControllerWithOrderId:nil orderAmount:nil orderDate:nil orderDesc:nil resv:nil paymentCallback:^(NSError *error) {
+        if (error) {
+            [self errorWithCode:error.code];
+        }
+    }];
+}
 
 - (IBAction)pwdManage:(id)sender {
     [ZQPayKit openPaymentPasswordManagerViewControllerWithCallback:^(NSError *error) {
