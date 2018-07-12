@@ -39,6 +39,8 @@ typedef NS_ENUM(NSInteger, ZQPayKitErrorCode)
 + (void)initWithAppKey:(NSString *)anAppKey appSecret:(NSString *)anAppSecret;
 // 设置用户信息
 + (void)setUid:(NSString *)uid token:(NSString *)token;
+// 设置按钮文字颜色、按钮背景色
++ (void)setButtonTitleColor:(UIColor *)buttonTitleColor buttonBackgroundColor:(UIColor *)buttonBackgroundColor;
 // 打开收银台页面，携带参数以及支付结果回调，参数包括：orderId订单号、orderAmount订单金额、orderDate订单日期、orderDesc订单描述、resv保留域
 + (void)openCashierViewControllerWithOrderId:(NSString *)orderId orderAmount:(NSDecimalNumber *)orderAmount orderDate:(NSDate *)orderDate orderDesc:(NSString *)orderDesc resv:(NSString *)resv paymentCallback:(void (^)(NSError *error))callback;
 // 打开我的银行卡列表

@@ -60,6 +60,7 @@
     self.navigationController.navigationBar.translucent = NO;
     
     [ZQPayKit initWithAppKey:@"jh28a4c4bc6734f58b" appSecret:@"63a10e15c19741599aacc686ecf7ffd5"];
+    [ZQPayKit setButtonTitleColor:[UIColor whiteColor] buttonBackgroundColor:[UIColor magentaColor]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
