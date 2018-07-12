@@ -7,10 +7,10 @@ target 'ZQPayKitDemo' do
     
     # Pods for ZQPayKitDemo
     
-    pod 'YTKNetwork', '2.0.3’
-    pod 'MBProgressHUD', '1.0.0’
+    pod 'YTKNetwork', '2.0.4’
+    pod 'MBProgressHUD', '1.1.0’
     pod 'SDWebImage', '4.2.3’
-    pod 'Masonry', '1.0.2’
+    pod 'Masonry', '1.1.0’
     pod 'YYModel', '1.0.4’
     pod 'YYText', '1.0.7'
     pod 'MJRefresh', '3.1.15.1’
