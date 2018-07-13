@@ -11,8 +11,7 @@
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *uidLabel;
-@property (weak, nonatomic) IBOutlet UILabel *tokenLabel;
+@property (nonatomic, copy) NSString *orderId;
 
 @end
 
@@ -33,12 +32,14 @@
 
 #pragma mark - event response
 - (IBAction)pay:(id)sender {
-    NSString *order = [NSString stringWithFormat:@"%ld", (long)([[NSDate date] timeIntervalSince1970]*1000)];
-    [ZQPayKit openCashierViewControllerWithOrderId:order orderAmount:[NSDecimalNumber decimalNumberWithString:@"12.53"] orderDate:[NSDate date] orderDesc:@"这是订单信息" resv:@"保留域" paymentCallback:^(NSError *error) {
+    self.orderId = [NSString stringWithFormat:@"%ld", (long)([[NSDate date] timeIntervalSince1970]*1000)];
+    [ZQPayKit openCashierViewControllerWithOrderId:self.orderId orderAmount:[NSDecimalNumber decimalNumberWithString:@"12.53"] orderDate:[NSDate date] orderDesc:@"这是订单信息" resv:@"保留域" paymentCallback:^(NSError *error) {
         if (error) {
+            // 支付出错
             [self errorWithCode:error.code];
         } else {
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"支付成功" message:nil preferredStyle:UIAlertControllerStyleAlert];
+            // error为空表示支付成功
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"支付成功" message:[NSString stringWithFormat:@"订单编号：%@", self.orderId] preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *ok = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault handler:nil];
             [alert addAction:ok];
             [self presentViewController:alert animated:NO completion:nil];
@@ -62,30 +63,18 @@
     }];
 }
 
-- (IBAction)login:(id)sender {
-    [ZQPayKit performSelector:NSSelectorFromString(@"test")];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     self.navigationController.navigationBar.translucent = NO;
     
-    [ZQPayKit initWithAppKey:@"jh28a4c4bc6734f58b" appSecret:@"63a10e15c19741599aacc686ecf7ffd5"];
-    [ZQPayKit setButtonTitleColor:[UIColor whiteColor] buttonBackgroundColor:[UIColor magentaColor]];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+    // 初始化，此方法必须在调用功能页面之前调用
+    [ZQPayKit initWithAppKey:@"jh9da381b765e3ec75" appSecret:@"fad25e93c727c7731ddb1af988373254"];
+    // 设置用户信息，此方法必须在调用功能页面之前调用
+    [ZQPayKit setUid:@"2018996" token:@"wcGTg9lMk3M="];
     
-    if ([ZQPayKit respondsToSelector:NSSelectorFromString(@"uid")]) {
-        NSString *uid = [ZQPayKit performSelector:NSSelectorFromString(@"uid")];
-        self.uidLabel.text = [NSString stringWithFormat:@"%@", uid];
-    }
-    if ([ZQPayKit respondsToSelector:NSSelectorFromString(@"token")]) {
-        NSString *token = [ZQPayKit performSelector:NSSelectorFromString(@"token")];
-        self.tokenLabel.text = [NSString stringWithFormat:@"%@", token];
-    }
+    // 设置按钮颜色
+    [ZQPayKit setButtonTitleColor:[UIColor whiteColor] buttonBackgroundColor:[UIColor magentaColor]];
 }
 
 @end

@@ -18,53 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uid:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ID-pC-PxP">
-                                <rect key="frame" x="16" y="123" width="29" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="token:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0q-5r-VA3">
-                                <rect key="frame" x="16" y="152" width="48" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="null" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDi-Tf-ic6">
-                                <rect key="frame" x="92" y="123" width="27" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="null" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1J-Kt-KOM">
-                                <rect key="frame" x="92" y="152" width="27" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MU-Ih-LNH">
-                                <rect key="frame" x="16" y="193" width="343" height="30"/>
-                                <state key="normal" title="登录"/>
-                                <connections>
-                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kbc-IS-Ao0"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkC-Oo-L4L">
-                                <rect key="frame" x="16" y="242" width="343" height="30"/>
+                                <rect key="frame" x="141.5" y="242" width="92" height="30"/>
                                 <state key="normal" title="我的银行卡"/>
                                 <connections>
                                     <action selector="bankList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="shV-gd-KP7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuQ-VP-2ai">
-                                <rect key="frame" x="15.5" y="290" width="343" height="30"/>
-                                <state key="normal" title="交易密码管理"/>
+                                <rect key="frame" x="141" y="290" width="92" height="30"/>
+                                <state key="normal" title="支付密码管理"/>
                                 <connections>
                                     <action selector="pwdManage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BIE-fM-TrH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfp-XJ-s6n">
-                                <rect key="frame" x="15.5" y="328" width="343" height="30"/>
+                                <rect key="frame" x="141" y="328" width="92" height="30"/>
                                 <state key="normal" title="订单支付"/>
                                 <connections>
                                     <action selector="pay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C1s-xb-blD"/>
@@ -73,34 +42,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NDi-Tf-ic6" firstAttribute="centerY" secondItem="9ID-pC-PxP" secondAttribute="centerY" id="0dk-c5-GgZ"/>
+                            <constraint firstItem="IkC-Oo-L4L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="178" id="2Ee-bt-qqY"/>
                             <constraint firstItem="yuQ-VP-2ai" firstAttribute="centerX" secondItem="IkC-Oo-L4L" secondAttribute="centerX" id="2hA-eT-Wre"/>
                             <constraint firstItem="hfp-XJ-s6n" firstAttribute="top" secondItem="yuQ-VP-2ai" secondAttribute="bottom" constant="8" id="B3l-rv-c3J"/>
                             <constraint firstItem="hfp-XJ-s6n" firstAttribute="width" secondItem="yuQ-VP-2ai" secondAttribute="width" id="Clg-Ae-nAU"/>
-                            <constraint firstItem="M1J-Kt-KOM" firstAttribute="leading" secondItem="H0q-5r-VA3" secondAttribute="trailing" constant="28" id="GuR-Mk-kXe"/>
-                            <constraint firstItem="NDi-Tf-ic6" firstAttribute="leading" secondItem="M1J-Kt-KOM" secondAttribute="leading" id="LPt-zN-i9n"/>
-                            <constraint firstItem="9ID-pC-PxP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="N8n-9V-cnh"/>
-                            <constraint firstItem="IkC-Oo-L4L" firstAttribute="width" secondItem="5MU-Ih-LNH" secondAttribute="width" id="Rgl-X3-cfh"/>
-                            <constraint firstItem="H0q-5r-VA3" firstAttribute="top" secondItem="9ID-pC-PxP" secondAttribute="bottom" constant="8" id="TKn-W8-OrN"/>
                             <constraint firstItem="hfp-XJ-s6n" firstAttribute="centerX" secondItem="yuQ-VP-2ai" secondAttribute="centerX" id="Tpf-qO-dph"/>
-                            <constraint firstItem="H0q-5r-VA3" firstAttribute="leading" secondItem="9ID-pC-PxP" secondAttribute="leading" id="V2D-a8-BYU"/>
-                            <constraint firstItem="IkC-Oo-L4L" firstAttribute="centerX" secondItem="5MU-Ih-LNH" secondAttribute="centerX" id="baF-bS-35J"/>
-                            <constraint firstItem="M1J-Kt-KOM" firstAttribute="centerY" secondItem="H0q-5r-VA3" secondAttribute="centerY" id="bft-zM-th0"/>
-                            <constraint firstItem="9ID-pC-PxP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="cVY-3v-yhV"/>
-                            <constraint firstItem="IkC-Oo-L4L" firstAttribute="top" secondItem="5MU-Ih-LNH" secondAttribute="bottom" constant="19" id="cnU-ip-wfD"/>
-                            <constraint firstItem="5MU-Ih-LNH" firstAttribute="top" secondItem="H0q-5r-VA3" secondAttribute="bottom" constant="20" id="fBD-Qs-NRk"/>
-                            <constraint firstItem="5MU-Ih-LNH" firstAttribute="leading" secondItem="H0q-5r-VA3" secondAttribute="leading" id="gbb-h7-gju"/>
                             <constraint firstItem="yuQ-VP-2ai" firstAttribute="width" secondItem="IkC-Oo-L4L" secondAttribute="width" id="k2H-Pt-ehU"/>
+                            <constraint firstItem="IkC-Oo-L4L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="psa-YX-BVr"/>
                             <constraint firstItem="yuQ-VP-2ai" firstAttribute="top" secondItem="IkC-Oo-L4L" secondAttribute="bottom" constant="18" id="sK3-Q5-ZtK"/>
-                            <constraint firstItem="5MU-Ih-LNH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sU6-NW-rU1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="cg9-Pv-Zrv"/>
-                    <connections>
-                        <outlet property="tokenLabel" destination="M1J-Kt-KOM" id="QIp-fp-yWJ"/>
-                        <outlet property="uidLabel" destination="NDi-Tf-ic6" id="4cC-sB-JO3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
