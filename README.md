@@ -28,7 +28,7 @@ pod 'ZXingObjC', '3.2.2'
 `+ (void)initWithAppKey:(NSString *)anAppKey appSecret:(NSString *)anAppSecret;`
 
 |参数名|说明|
-|--|--|
+|:-:|:-:|
 |anAppKey|SDK提供方为第三方app生成的appKey|
 |anAppSecret|SDK提供方为第三方app生成的appSecret|
 
