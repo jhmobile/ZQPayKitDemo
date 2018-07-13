@@ -27,9 +27,15 @@
 
 #pragma mark - event response
 - (IBAction)pay:(id)sender {
-    [ZQPayKit openCashierViewControllerWithOrderId:nil orderAmount:nil orderDate:nil orderDesc:nil resv:nil paymentCallback:^(NSError *error) {
+    NSString *order = [NSString stringWithFormat:@"%ld", (long)([[NSDate date] timeIntervalSince1970]*1000)];
+    [ZQPayKit openCashierViewControllerWithOrderId:order orderAmount:[NSDecimalNumber decimalNumberWithString:@"12.53"] orderDate:[NSDate date] orderDesc:@"这是订单信息" resv:@"保留域" paymentCallback:^(NSError *error) {
         if (error) {
             [self errorWithCode:error.code];
+        } else {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"支付成功" message:nil preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *ok = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault handler:nil];
+            [alert addAction:ok];
+            [self presentViewController:alert animated:NO completion:nil];
         }
     }];
 }

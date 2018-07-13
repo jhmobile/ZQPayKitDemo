@@ -2,6 +2,8 @@
   "platform_id" : "1",
 
   "huachuang_bankNo" : "HCZF",
+    
+  "qrpay_disabled": "1",
 
   "login_icon" : "ic_dl_ymt",
   "login_tip" : "平台资金建设银行监管",
