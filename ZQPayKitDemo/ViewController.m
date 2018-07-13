@@ -19,7 +19,13 @@
 @implementation ViewController
 
 - (void)errorWithCode:(NSInteger)code {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:[NSString stringWithFormat:@"%ld", (long)code] preferredStyle:UIAlertControllerStyleAlert];
+    NSDictionary *messages = @{
+                               @"1001": @"用户取消",
+                               @"1002": @"未设置appKey",
+                               @"1003": @"用户信息错误",
+                               @"1010": @"未知业务错误"
+                               };
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:messages[[NSString stringWithFormat:@"%ld", (long)code]] preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault handler:nil];
     [alert addAction:ok];
     [self presentViewController:alert animated:NO completion:nil];
