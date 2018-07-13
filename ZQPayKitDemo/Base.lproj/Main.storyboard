@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--支付SDK-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfp-XJ-s6n">
-                                <rect key="frame" x="141" y="328" width="92" height="30"/>
+                                <rect key="frame" x="141" y="338" width="92" height="30"/>
                                 <state key="normal" title="订单支付"/>
                                 <connections>
                                     <action selector="pay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C1s-xb-blD"/>
@@ -44,7 +44,7 @@
                         <constraints>
                             <constraint firstItem="IkC-Oo-L4L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="178" id="2Ee-bt-qqY"/>
                             <constraint firstItem="yuQ-VP-2ai" firstAttribute="centerX" secondItem="IkC-Oo-L4L" secondAttribute="centerX" id="2hA-eT-Wre"/>
-                            <constraint firstItem="hfp-XJ-s6n" firstAttribute="top" secondItem="yuQ-VP-2ai" secondAttribute="bottom" constant="8" id="B3l-rv-c3J"/>
+                            <constraint firstItem="hfp-XJ-s6n" firstAttribute="top" secondItem="yuQ-VP-2ai" secondAttribute="bottom" constant="18" id="B3l-rv-c3J"/>
                             <constraint firstItem="hfp-XJ-s6n" firstAttribute="width" secondItem="yuQ-VP-2ai" secondAttribute="width" id="Clg-Ae-nAU"/>
                             <constraint firstItem="hfp-XJ-s6n" firstAttribute="centerX" secondItem="yuQ-VP-2ai" secondAttribute="centerX" id="Tpf-qO-dph"/>
                             <constraint firstItem="yuQ-VP-2ai" firstAttribute="width" secondItem="IkC-Oo-L4L" secondAttribute="width" id="k2H-Pt-ehU"/>
@@ -53,7 +53,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cg9-Pv-Zrv"/>
+                    <navigationItem key="navigationItem" title="支付SDK" id="cg9-Pv-Zrv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
