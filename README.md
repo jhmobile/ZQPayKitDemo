@@ -36,6 +36,7 @@ pod 'ZXingObjC', '3.2.2'
 
 ### 设置用户信息
 `+ (void)setUid:(NSString *)uid token:(NSString *)token;`
+
 |参数名|说明|
 |:-:|:-:|
 |uid|第三方app从SDK提供方后台服务中获取的用户id|
@@ -45,6 +46,7 @@ pod 'ZXingObjC', '3.2.2'
 
 ### 换肤
 `+ (void)setButtonTitleColor:(UIColor *)buttonTitleColor buttonBackgroundColor:(UIColor *)buttonBackgroundColor;`
+
 |参数名|说明|
 |:-:|:-:|
 |buttonTitleColor|功能页面提交按钮文字颜色|
