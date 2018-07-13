@@ -28,7 +28,7 @@ pod 'ZXingObjC', '3.2.2'
 `+ (void)initWithAppKey:(NSString *)anAppKey appSecret:(NSString *)anAppSecret;`
 
 |参数名|说明|
-|--|--|
+|:-:|:-:|
 |anAppKey|SDK提供方为第三方app生成的appKey|
 |anAppSecret|SDK提供方为第三方app生成的appSecret|
 
@@ -36,8 +36,9 @@ pod 'ZXingObjC', '3.2.2'
 
 ### 设置用户信息
 `+ (void)setUid:(NSString *)uid token:(NSString *)token;`
+
 |参数名|说明|
-|--|--|
+|:-:|:-:|
 |uid|第三方app从SDK提供方后台服务中获取的用户id|
 |token|第三方app从SDK提供方后台服务中获取的用户token|
 
@@ -45,8 +46,9 @@ pod 'ZXingObjC', '3.2.2'
 
 ### 换肤
 `+ (void)setButtonTitleColor:(UIColor *)buttonTitleColor buttonBackgroundColor:(UIColor *)buttonBackgroundColor;`
+
 |参数名|说明|
-|--|--|
+|:-:|:-:|
 |buttonTitleColor|功能页面提交按钮文字颜色|
 |buttonBackgroundColor|功能页面提交按钮背景色|
 
@@ -56,7 +58,7 @@ pod 'ZXingObjC', '3.2.2'
 `+ (void)openCashierViewControllerWithOrderId:(NSString *)orderId orderAmount:(NSDecimalNumber *)orderAmount orderDate:(NSDate *)orderDate orderDesc:(NSString *)orderDesc resv:(NSString *)resv paymentCallback:(void (^)(NSError *error))callback;`
 
 |参数名|说明|
-|--|--|
+|:-:|:-:|
 |orderId|订单号|
 |orderAmount|订单金额|
 |orderDate|订单生成时间|
@@ -68,14 +70,14 @@ pod 'ZXingObjC', '3.2.2'
 `+ (void)openBankListViewControllerWithCallback:(void (^)(NSError *error))callback;`
 
 |参数名|说明|
-|--|--|
+|:-:|:-:|
 |callback|回调，error参数为空表示打开页面成功，否则失败；错误码请参考ZQPayKitErrorCode|
 
 ### 支付密码管理
 `+ (void)openPaymentPasswordManagerViewControllerWithCallback:(void (^)(NSError *error))callback;`
 
 |参数名|说明|
-|--|--|
+|:-:|:-:|
 |callback|回调，error参数为空表示打开页面成功，否则失败；错误码请参考ZQPayKitErrorCode|
 
 ### 错误码
