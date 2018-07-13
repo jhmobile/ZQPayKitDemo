@@ -1,5 +1,5 @@
 # 支付流程交互图
-![结构图](https://github.com/jhmobile/Android-zqpay-sample/blob/master/app/image/structure.png)
+![交互流程](/image.png)
 
 # 集成步骤
 * 将ZQPayKit.framework和ZQPayKitResource.bundle拖到工程中

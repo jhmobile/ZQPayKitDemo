@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import <ZQPayKit/ZQPayKit.h>
 
+/*
+ 集成文档请参考工程目录下的README.md
+ */
+
 @interface ViewController ()
 
 @property (nonatomic, copy) NSString *orderId;
