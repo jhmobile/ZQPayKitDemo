@@ -479,9 +479,9 @@
 					"-all_load",
 				);
 				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jinhui365.iphone-pay-staging";
+				PRODUCT_BUNDLE_IDENTIFIER = $APP_BUNDLEID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "maojiuhui-development";
+				PROVISIONING_PROFILE_SPECIFIER = $APP_PROFILE;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
