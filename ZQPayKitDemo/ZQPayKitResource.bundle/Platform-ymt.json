@@ -1,6 +1,5 @@
 {
-  "platform_id" : "801",
-
+  "isYMT": "1",
   "huachuang_bankNo" : "HCZF",
     
   "qrpay_disabled": "1",
