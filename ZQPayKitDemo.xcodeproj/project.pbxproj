@@ -440,6 +440,7 @@
 			baseConfigurationReference = 0B44152EA5C891F7F396D6FA /* Pods-ZQPayKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 95JNXR7E2U;
 				FRAMEWORK_SEARCH_PATHS = (
