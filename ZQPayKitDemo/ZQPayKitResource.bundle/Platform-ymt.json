@@ -3,6 +3,7 @@
   "huachuang_bankNo" : "HCZF",
     
   "qrpay_disabled": "1",
+  "can_delete_last_card": "1",
 
   "login_icon" : "ic_dl_ymt",
   "login_tip" : "平台资金建设银行监管",

@@ -27,16 +27,23 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuQ-VP-2ai">
                                 <rect key="frame" x="141" y="290" width="92" height="30"/>
-                                <state key="normal" title="支付密码管理"/>
+                                <state key="normal" title="修改支付密码"/>
                                 <connections>
                                     <action selector="pwdManage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BIE-fM-TrH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfp-XJ-s6n">
-                                <rect key="frame" x="141" y="338" width="92" height="30"/>
+                                <rect key="frame" x="141" y="386" width="92" height="30"/>
                                 <state key="normal" title="订单支付"/>
                                 <connections>
                                     <action selector="pay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C1s-xb-blD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLh-XL-EZS">
+                                <rect key="frame" x="141" y="338" width="92" height="30"/>
+                                <state key="normal" title="忘记支付密码"/>
+                                <connections>
+                                    <action selector="resetPwd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xtn-6Y-b8B"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,12 +51,14 @@
                         <constraints>
                             <constraint firstItem="IkC-Oo-L4L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="178" id="2Ee-bt-qqY"/>
                             <constraint firstItem="yuQ-VP-2ai" firstAttribute="centerX" secondItem="IkC-Oo-L4L" secondAttribute="centerX" id="2hA-eT-Wre"/>
-                            <constraint firstItem="hfp-XJ-s6n" firstAttribute="top" secondItem="yuQ-VP-2ai" secondAttribute="bottom" constant="18" id="B3l-rv-c3J"/>
                             <constraint firstItem="hfp-XJ-s6n" firstAttribute="width" secondItem="yuQ-VP-2ai" secondAttribute="width" id="Clg-Ae-nAU"/>
+                            <constraint firstItem="FLh-XL-EZS" firstAttribute="centerX" secondItem="yuQ-VP-2ai" secondAttribute="centerX" id="Hgx-WV-y1m"/>
                             <constraint firstItem="hfp-XJ-s6n" firstAttribute="centerX" secondItem="yuQ-VP-2ai" secondAttribute="centerX" id="Tpf-qO-dph"/>
                             <constraint firstItem="yuQ-VP-2ai" firstAttribute="width" secondItem="IkC-Oo-L4L" secondAttribute="width" id="k2H-Pt-ehU"/>
                             <constraint firstItem="IkC-Oo-L4L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="psa-YX-BVr"/>
+                            <constraint firstItem="FLh-XL-EZS" firstAttribute="top" secondItem="yuQ-VP-2ai" secondAttribute="bottom" constant="18" id="rRD-1j-dIj"/>
                             <constraint firstItem="yuQ-VP-2ai" firstAttribute="top" secondItem="IkC-Oo-L4L" secondAttribute="bottom" constant="18" id="sK3-Q5-ZtK"/>
+                            <constraint firstItem="hfp-XJ-s6n" firstAttribute="top" secondItem="FLh-XL-EZS" secondAttribute="bottom" constant="18" id="y5k-vF-Tf7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

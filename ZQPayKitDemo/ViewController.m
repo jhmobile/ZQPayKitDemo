@@ -33,7 +33,6 @@
     [alert addAction:ok];
     [self presentViewController:alert animated:NO completion:nil];
 }
-
 #pragma mark - event response
 - (IBAction)pay:(id)sender {
     self.orderId = [NSString stringWithFormat:@"%ld", (long)([[NSDate date] timeIntervalSince1970]*1000)];
@@ -52,7 +51,15 @@
 }
 
 - (IBAction)pwdManage:(id)sender {
-    [ZQPayKit openPaymentPasswordManagerViewControllerWithCallback:^(NSError *error) {
+    [ZQPayKit openModifyPasswordViewControllerWithCallback:^(NSError *error) {
+        if (error) {
+            [self errorWithCode:error.code];
+        }
+    }];
+}
+
+- (IBAction)resetPwd:(id)sender {
+    [ZQPayKit openResetPasswordViewControllerWithCallback:^(NSError *error) {
         if (error) {
             [self errorWithCode:error.code];
         }
@@ -73,9 +80,10 @@
     self.navigationController.navigationBar.translucent = NO;
     
     // 初始化，此方法必须在调用功能页面之前调用
-    [ZQPayKit initWithAppKey:@"jh9da381b765e3ec75" appSecret:@"fad25e93c727c7731ddb1af988373254"];
+    [ZQPayKit initWithAppKey:@"appKey" appSecret:@"appSecret"];
+    
     // 设置用户信息，此方法必须在调用功能页面之前调用
-    [ZQPayKit setUid:@"2018996" token:@"wcGTg9lMk3M="];
+    [ZQPayKit setUid:@"uid" token:@"token"];
     
     // 设置按钮颜色
     [ZQPayKit setButtonTitleColor:[UIColor whiteColor] buttonBackgroundColor:[UIColor magentaColor]];

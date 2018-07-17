@@ -62,7 +62,7 @@
             "/reset-trade-pwd": {
                 "interceptors": ["BindCardInterceptor"],
                 "taskOptions": {
-                    "controllerClass": "AuthenticationViewController"
+                    "controllerClass": "IForgetTradeKeyViewController"
                 }
             },
             "/binding-card": {

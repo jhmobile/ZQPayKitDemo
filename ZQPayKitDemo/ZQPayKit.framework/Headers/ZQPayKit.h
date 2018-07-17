@@ -45,8 +45,10 @@ typedef NS_ENUM(NSInteger, ZQPayKitErrorCode)
 + (void)openCashierViewControllerWithOrderId:(NSString *)orderId orderAmount:(NSDecimalNumber *)orderAmount orderDate:(NSDate *)orderDate orderDesc:(NSString *)orderDesc resv:(NSString *)resv paymentCallback:(void (^)(NSError *error))callback;
 // 打开我的银行卡列表
 + (void)openBankListViewControllerWithCallback:(void (^)(NSError *error))callback;
-// 打开交易密码管理页
-+ (void)openPaymentPasswordManagerViewControllerWithCallback:(void (^)(NSError *error))callback;
+// 打开修改支付密码页
++ (void)openModifyPasswordViewControllerWithCallback:(void (^)(NSError *error))callback;
+// 打开重置支付密码页
++ (void)openResetPasswordViewControllerWithCallback:(void (^)(NSError *error))callback;
 
 @end
 
