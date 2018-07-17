@@ -89,8 +89,15 @@ pod 'ZXingObjC', '3.2.2'
 |:-:|:-:|
 |callback|回调，error参数为空表示打开页面成功，否则失败；错误码请参考ZQPayKitErrorCode|
 
-### 支付密码管理
-`+ (void)openPaymentPasswordManagerViewControllerWithCallback:(void (^)(NSError *error))callback;`
+### 修改支付密码
+`+ (void)openModifyPasswordViewControllerWithCallback:(void (^)(NSError *error))callback;`
+
+|参数名|说明|
+|:-:|:-:|
+|callback|回调，error参数为空表示打开页面成功，否则失败；错误码请参考ZQPayKitErrorCode|
+
+### 重置支付密码
+`+ (void)openResetPasswordViewControllerWithCallback:(void (^)(NSError *error))callback;`
 
 |参数名|说明|
 |:-:|:-:|
