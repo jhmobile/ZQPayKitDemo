@@ -36,7 +36,7 @@
 #pragma mark - event response
 - (IBAction)pay:(id)sender {
     self.orderId = [NSString stringWithFormat:@"%ld", (long)([[NSDate date] timeIntervalSince1970]*1000)];
-    [ZQPayKit openCashierViewControllerWithOrderId:self.orderId orderAmount:[NSDecimalNumber decimalNumberWithString:@"12.53"] orderDate:[NSDate date] orderDesc:@"这是订单信息" resv:@"保留域" paymentCallback:^(NSError *error) {
+    [ZQPayKit openCashierViewControllerWithInstuId:@"13651246987" orderId:self.orderId orderAmount:[NSDecimalNumber decimalNumberWithString:@"12.53"] orderDate:[NSDate date] orderDesc:@"这是订单信息" resv:@"保留域" paymentCallback:^(NSError *error) {
         if (error) {
             // 支付出错
             [self errorWithCode:error.code];

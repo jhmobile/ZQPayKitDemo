@@ -71,10 +71,11 @@ pod 'ZXingObjC', '3.2.2'
 目前仅支持按钮样式，导航栏样式由第三方app自定义，按需调用
 
 ### 收银台
-`+ (void)openCashierViewControllerWithOrderId:(NSString *)orderId orderAmount:(NSDecimalNumber *)orderAmount orderDate:(NSDate *)orderDate orderDesc:(NSString *)orderDesc resv:(NSString *)resv paymentCallback:(void (^)(NSError *error))callback;`
+`+ (void)openCashierViewControllerWithInstuId:(NSString *)instuId orderId:(NSString *)orderId orderAmount:(NSDecimalNumber *)orderAmount orderDate:(NSDate *)orderDate orderDesc:(NSString *)orderDesc resv:(NSString *)resv paymentCallback:(void (^)(NSError *error))callback;`
 
 |参数名|说明|
 |:-:|:-:|
+|instuId|商户号|
 |orderId|订单号|
 |orderAmount|订单金额|
 |orderDate|订单生成时间|

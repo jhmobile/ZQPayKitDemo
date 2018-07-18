@@ -67,7 +67,9 @@
             },
             "/binding-card": {
                 "taskOptions": {
-                    "controllerClass": "BindCardViewController"
+                    "controllerClass": "BindCardViewController",
+                    "present": 1,
+                    "wrap": "NavigationController"
                 }
             },
             "/identify-guide": {
