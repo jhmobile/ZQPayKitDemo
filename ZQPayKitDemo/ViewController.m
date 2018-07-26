@@ -79,6 +79,9 @@
 
     self.navigationController.navigationBar.translucent = NO;
     
+    // 配置发布环境为测试
+    [ZQPayKit setProduction:NO];
+    
     // 初始化，此方法必须在调用功能页面之前调用
     [ZQPayKit initWithAppKey:@"appKey" appSecret:@"appSecret"];
     

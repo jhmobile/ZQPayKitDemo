@@ -34,6 +34,8 @@ typedef NS_ENUM(NSInteger, ZQPayKitErrorCode)
 
 // 读取当前SDK版本号
 + (NSString *)version;
+// 配置发布环境
++ (void)setProduction:(BOOL)isProduction;
 
 // 初始化，需要appkey、appsecret
 + (void)initWithAppKey:(NSString *)anAppKey appSecret:(NSString *)anAppSecret;

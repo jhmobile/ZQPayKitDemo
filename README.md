@@ -50,6 +50,13 @@ pod 'ZXingObjC', '3.2.2'
 
 `此方法在调用SDK页面之前必须调用，否则功能页面调用失败`
 
+### 配置发布环境
+`+ (void)setProduction:(BOOL)isProduction;`
+
+|参数名|说明|
+|:-:|:-:|
+|isProduction|是否生产环境，默认NO，请为当前发布环境设置正确的appKey、appSecret|
+
 ### 设置用户信息
 `+ (void)setUid:(NSString *)uid token:(NSString *)token;`
 
