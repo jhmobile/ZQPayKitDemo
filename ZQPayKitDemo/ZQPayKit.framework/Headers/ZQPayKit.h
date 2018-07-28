@@ -36,7 +36,8 @@ typedef NS_ENUM(NSInteger, ZQPayKitErrorCode)
 + (NSString *)version;
 // 配置发布环境
 + (void)setProduction:(BOOL)isProduction;
-
+// 网络调试开关
++ (void)setDebugMode:(BOOL)debug;
 // 初始化，需要appkey、appsecret
 + (void)initWithAppKey:(NSString *)anAppKey appSecret:(NSString *)anAppSecret;
 // 设置用户信息
