@@ -57,6 +57,13 @@ pod 'ZXingObjC', '3.2.2'
 |:-:|:-:|
 |isProduction|是否生产环境，默认NO，请为当前发布环境设置正确的appKey、appSecret|
 
+### 网络调试开关，是否校验https证书
+`+ (void)setDebugMode:(BOOL)debug;`
+
+|参数名|说明|
+|:-:|:-:|
+|debug|是否校验https证书，默认NO。生产环境请在application:didFinishLaunchingWithOptions:方法中调用[ZQPayKit setDebugMode:NO]，防止中间人攻击。
+
 ### 设置用户信息
 `+ (void)setUid:(NSString *)uid token:(NSString *)token;`
 
