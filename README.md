@@ -62,7 +62,7 @@ pod 'ZXingObjC', '3.2.2'
 
 |参数名|说明|
 |:-:|:-:|
-|debug|是否校验https证书，默认NO。生产环境请在application:didFinishLaunchingWithOptions:方法中调用[ZQPayKit setDebugMode:NO]，防止中间人攻击。
+|debug|是否校验https证书，默认YES。生产环境请在application:didFinishLaunchingWithOptions:方法中调用[ZQPayKit setDebugMode:NO]，防止中间人攻击。
 
 ### 设置用户信息
 `+ (void)setUid:(NSString *)uid token:(NSString *)token;`
