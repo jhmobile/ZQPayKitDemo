@@ -1,10 +1,11 @@
 {
   "isYMT": "1",
-  "huachuang_bankNo" : "HCZF",
     
   "qrpay_disabled": "1",
   "can_add_same_bank": "1",
   "can_delete_last_card": "1",
+  "support_credit_card": "1",
+  "custom_mobile": "1",
 
   "login_icon" : "ic_dl_ymt",
   "login_tip" : "平台资金建设银行监管",

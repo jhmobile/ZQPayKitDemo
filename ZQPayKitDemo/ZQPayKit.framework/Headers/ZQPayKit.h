@@ -44,10 +44,14 @@ typedef NS_ENUM(NSInteger, ZQPayKitErrorCode)
 + (void)setUid:(NSString *)uid token:(NSString *)token;
 // 设置按钮文字颜色、按钮背景色
 + (void)setButtonTitleColor:(UIColor *)buttonTitleColor buttonBackgroundColor:(UIColor *)buttonBackgroundColor;
+// 是否支持余额支付
++ (void)setSupportBalancePay:(BOOL)support;
 // 打开收银台页面，携带参数以及支付结果回调，参数包括：instuId商户号、instuName商户名称、orderId订单号、orderAmount订单金额、orderDate订单日期、orderDesc订单描述、resv保留域
 + (void)openCashierViewControllerWithInstuId:(NSString *)instuId instuName:(NSString *)instuName orderId:(NSString *)orderId orderAmount:(NSDecimalNumber *)orderAmount orderDate:(NSDate *)orderDate orderDesc:(NSString *)orderDesc resv:(NSString *)resv paymentCallback:(void (^)(NSError *error))callback;
 // 打开我的银行卡列表
 + (void)openBankListViewControllerWithCallback:(void (^)(NSError *error))callback;
+// 打开余额页面
++ (void)openBalanceViewControllerWithCallback:(void (^)(NSError *error))callback;
 // 打开修改支付密码页
 + (void)openModifyPasswordViewControllerWithCallback:(void (^)(NSError *error))callback;
 // 打开重置支付密码页
