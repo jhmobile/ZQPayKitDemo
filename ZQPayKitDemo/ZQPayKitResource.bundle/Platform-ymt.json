@@ -6,6 +6,7 @@
   "can_delete_last_card": "1",
   "support_credit_card": "1",
   "custom_mobile": "1",
+    "zqpay_support_balance": "1",
 
   "login_icon" : "ic_dl_ymt",
   "login_tip" : "平台资金建设银行监管",

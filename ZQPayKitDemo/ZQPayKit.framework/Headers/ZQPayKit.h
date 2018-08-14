@@ -50,6 +50,8 @@ typedef NS_ENUM(NSInteger, ZQPayKitErrorCode)
 + (void)openCashierViewControllerWithInstuId:(NSString *)instuId instuName:(NSString *)instuName orderId:(NSString *)orderId orderAmount:(NSDecimalNumber *)orderAmount orderDate:(NSDate *)orderDate orderDesc:(NSString *)orderDesc resv:(NSString *)resv paymentCallback:(void (^)(NSError *error))callback;
 // 打开我的银行卡列表
 + (void)openBankListViewControllerWithCallback:(void (^)(NSError *error))callback;
+// 获取余额
++ (void)getBalanceWithCallback:(void (^)(NSDecimalNumber *balance, NSError *error))callback;
 // 打开余额页面
 + (void)openBalanceViewControllerWithCallback:(void (^)(NSError *error))callback;
 // 打开修改支付密码页
