@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 #import <ZQPayKit/ZQPayKit.h>
 
 @interface AppDelegate ()
@@ -19,7 +20,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [ZQPayKit setDebugMode:NO];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    [ZQPayKit setDebugMode:YES];
     
     return YES;
 }

@@ -84,6 +84,27 @@ pod 'ZXingObjC', '3.2.2'
 
 目前仅支持按钮样式，导航栏样式由第三方app自定义，按需调用
 
+### 余额支付开关
+`+ (void)setSupportBalancePay:(BOOL)support;`
+
+|参数名|说明|
+|:-:|:-:|
+|support|是否支持使用余额支付，默认YES|
+
+### 获取余额
+`+ (void)getBalanceWithCallback:(void (^)(NSDecimalNumber *balance, NSError *error))callback;`
+
+|参数名|说明|
+|:-:|:-:|
+|callback|支付结果回调，balance为账户余额，error参数为空时表示获取成功；错误码请参考ZQPayKitErrorCode|
+
+### 余额首页
+`+ (void)openBalanceViewControllerWithCallback:(void (^)(NSError *error))callback;`
+
+|参数名|说明|
+|:-:|:-:|
+|callback|回调，error参数为空表示打开页面成功，否则失败；错误码请参考ZQPayKitErrorCode|
+
 ### 收银台
 `+ (void)openCashierViewControllerWithInstuId:(NSString *)instuId instuName:(NSString *)instuName orderId:(NSString *)orderId orderAmount:(NSDecimalNumber *)orderAmount orderDate:(NSDate *)orderDate orderDesc:(NSString *)orderDesc resv:(NSString *)resv paymentCallback:(void (^)(NSError *error))callback;`
 
