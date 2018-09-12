@@ -24,6 +24,16 @@
 libstdc++.6.0.9.tbd
 AudioToolbox.framework
 Security.framework
+CoreMedia.framework
+Accelerate.framework
+SystemConfiguration.framework
+WebKit.framework
+Contacts.framework
+CoreLocation.framework
+AVFoundation.framework
+CoreTelephony.framework
+MobileCoreServices.framework
+AdSupport.framework
 ```
 * CocoaPods依赖以下三方库
 ```

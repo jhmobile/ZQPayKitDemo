@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4B3ED53B1819FD4C7BE0F955 /* Pods_ZQPayKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D4949FC1E1EF03BA337A00 /* Pods_ZQPayKitDemo.framework */; };
+		F21A6256214909410087DA61 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21A6255214909410087DA61 /* CoreMedia.framework */; };
+		F21A6258214909520087DA61 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21A6257214909520087DA61 /* Accelerate.framework */; };
+		F21A625A214909690087DA61 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21A6259214909680087DA61 /* SystemConfiguration.framework */; };
+		F21A625C2149097A0087DA61 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21A625B214909790087DA61 /* WebKit.framework */; };
+		F21A625E214909840087DA61 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21A625D214909840087DA61 /* Contacts.framework */; };
+		F21A62602149098E0087DA61 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21A625F2149098E0087DA61 /* CoreLocation.framework */; };
+		F21A62622149099B0087DA61 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21A62612149099B0087DA61 /* AVFoundation.framework */; };
+		F21A6264214909AB0087DA61 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21A6263214909AB0087DA61 /* CoreTelephony.framework */; };
+		F21A6266214909BA0087DA61 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21A6265214909BA0087DA61 /* MobileCoreServices.framework */; };
+		F21A6268214909C80087DA61 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21A6267214909C80087DA61 /* AdSupport.framework */; };
 		F21EE1DC20F6222C00255F44 /* ZQPayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21EE1DB20F6222C00255F44 /* ZQPayKit.framework */; };
 		F21EE20E20F659F900255F44 /* ZQPayKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F21EE20D20F659F900255F44 /* ZQPayKitResource.bundle */; };
 		F21EE21020F6F6D900255F44 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21EE20F20F6F6D900255F44 /* Security.framework */; };
@@ -24,6 +34,16 @@
 		0B44152EA5C891F7F396D6FA /* Pods-ZQPayKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQPayKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZQPayKitDemo/Pods-ZQPayKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		22D4949FC1E1EF03BA337A00 /* Pods_ZQPayKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQPayKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7258AD068289806ECAE6ACFC /* Pods-ZQPayKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQPayKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZQPayKitDemo/Pods-ZQPayKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F21A6255214909410087DA61 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F21A6257214909520087DA61 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		F21A6259214909680087DA61 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F21A625B214909790087DA61 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F21A625D214909840087DA61 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		F21A625F2149098E0087DA61 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F21A62612149099B0087DA61 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F21A6263214909AB0087DA61 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F21A6265214909BA0087DA61 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F21A6267214909C80087DA61 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		F21EE1DB20F6222C00255F44 /* ZQPayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZQPayKit.framework; sourceTree = "<group>"; };
 		F21EE20D20F659F900255F44 /* ZQPayKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZQPayKitResource.bundle; sourceTree = "<group>"; };
 		F21EE20F20F6F6D900255F44 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -45,6 +65,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21A6268214909C80087DA61 /* AdSupport.framework in Frameworks */,
+				F21A6266214909BA0087DA61 /* MobileCoreServices.framework in Frameworks */,
+				F21A6264214909AB0087DA61 /* CoreTelephony.framework in Frameworks */,
+				F21A62622149099B0087DA61 /* AVFoundation.framework in Frameworks */,
+				F21A62602149098E0087DA61 /* CoreLocation.framework in Frameworks */,
+				F21A625E214909840087DA61 /* Contacts.framework in Frameworks */,
+				F21A625C2149097A0087DA61 /* WebKit.framework in Frameworks */,
+				F21A625A214909690087DA61 /* SystemConfiguration.framework in Frameworks */,
+				F21A6258214909520087DA61 /* Accelerate.framework in Frameworks */,
+				F21A6256214909410087DA61 /* CoreMedia.framework in Frameworks */,
 				F21EE21420F6F6E800255F44 /* AudioToolbox.framework in Frameworks */,
 				F21EE21220F6F6E000255F44 /* libstdc++.6.0.9.tbd in Frameworks */,
 				F21EE21020F6F6D900255F44 /* Security.framework in Frameworks */,
@@ -103,6 +133,16 @@
 		F938CD2F750969CB40107316 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F21A6267214909C80087DA61 /* AdSupport.framework */,
+				F21A6265214909BA0087DA61 /* MobileCoreServices.framework */,
+				F21A6263214909AB0087DA61 /* CoreTelephony.framework */,
+				F21A62612149099B0087DA61 /* AVFoundation.framework */,
+				F21A625F2149098E0087DA61 /* CoreLocation.framework */,
+				F21A625D214909840087DA61 /* Contacts.framework */,
+				F21A625B214909790087DA61 /* WebKit.framework */,
+				F21A6259214909680087DA61 /* SystemConfiguration.framework */,
+				F21A6257214909520087DA61 /* Accelerate.framework */,
+				F21A6255214909410087DA61 /* CoreMedia.framework */,
 				F21EE21320F6F6E800255F44 /* AudioToolbox.framework */,
 				F21EE21120F6F6E000255F44 /* libstdc++.6.0.9.tbd */,
 				F21EE20F20F6F6D900255F44 /* Security.framework */,

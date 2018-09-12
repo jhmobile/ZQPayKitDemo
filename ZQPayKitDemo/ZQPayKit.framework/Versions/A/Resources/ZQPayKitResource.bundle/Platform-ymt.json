@@ -1,0 +1,41 @@
+{
+  "isYMT": "1",
+    
+  "qrpay_disabled": "1",
+  "can_add_same_bank": "1",
+  "can_delete_last_card": "1",
+  "support_credit_card": "1",
+  "custom_mobile": "1",
+    "zqpay_support_balance": "1",
+
+  "login_icon" : "ic_dl_ymt",
+  "login_tip" : "平台资金建设银行监管",
+
+  "register_referral_phone_tip" : "推荐人在平台注册手机号（非必填）",
+  "register_account_alert_tip" : "该手机号已注册，请直接登录",
+
+  "bind_card_phone_tip" : "银行卡预留手机号须与平台注册手机号一致",
+  "bind_card_alert_tip" : "您还没有绑卡，为不影响您正常使用交易功能，请确认是否进行绑卡？",
+  "bind_card_protocol_tip" : "我已阅读并同意平台相关协议，理解其内容并承担相关风险",
+  "bind_card_protocol_part_tip" : "平台相关协议",
+
+  "invite_friends_qr_tip" : "扫一扫二维码，加入云码通",
+  "invite_friends_wx_title_tip" : "您的生活会因有我们更美好",
+  "invite_friends_wx_subtitle_tip" : "快来加入我们吧",
+  "invite_friends_sms_tip" : "快和我一起加入吧 ！",
+
+  "customer_service_tip" : "若有疑问请致电",
+  "customer_service_display_phone" : "4006-999-133",
+  "customer_service_real_phone" : "4006999133",
+
+  "trade_password_lenth" : "6",
+  "trade_password_minLenth" : "6",
+  "trade_password_maxLenth" : "6",
+  "trade_password_title_type" : "交易密码",
+  "trade_password_desc" : "支付密码",
+  "trade_password_keyboard_type" : "4",
+  "trade_password_type" : "数字",
+
+  "appstoreUpdateURL" : "https://itunes.apple.com/cn/app/id1345738789",
+  "appID" : "1345738789"
+}
